@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Reservasi</title>
+    <link rel="stylesheet" href="../css/reservasi.css">
+</head>
+<body>
+    <form action="#" method="post" class="reservation-form" onsubmit="submitReservation(event)">
+        <h2>Form Reservasi</h2>
+        
+        <fieldset>
+            <legend>Reservasi</legend>
+            <p>Nama: <input type="text" id="name" placeholder="Masukkan nama lengkap" required></p>
+            <p>Email: <input type="email" id="email" placeholder="Masukkan email" required></p>
+            <p>No. Hp: <input type="text" id="phone" placeholder="Masukkan nomor HP" required></p>
+            <p>Jenis Kelamin:
+                <input type="radio" name="gender" id="laki-laki" value="Male" required>
+                <label for="laki-laki">Laki-laki</label>
+                <input type="radio" name="gender" id="perempuan" value="Female" required>
+                <label for="perempuan">Perempuan</label>
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Paket Pilihan</legend>
+            <p><input type="checkbox" id="pangkas" data-id-service="1" value="50000" onclick="calculateTotal()"> Pangkas (Rp 50.000)</p>
+            <p><input type="checkbox" id="cuci" data-id-service="2" value="20000" onclick="calculateTotal()"> Cuci Rambut (Rp 20.000)</p>
+            <p><input type="checkbox" id="warnai" data-id-service="3" value="100000" onclick="calculateTotal()"> Warnai Rambut (Rp 100.000)</p>
+            <p><input type="checkbox" id="pijet" data-id-service="4" value="30000" onclick="calculateTotal()"> Pijet (Rp 30.000)</p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Pilih Jadwal</legend>
+            <p><input type="radio" name="schedule" id="pagi" value="Pagi" required><label for="pagi">Pagi</label></p> 
+            <p><input type="radio" name="schedule" id="siang" value="Siang" required><label for="siang">Siang</label></p> 
+            <p><input type="radio" name="schedule" id="sore" value="Sore" required><label for="sore">Sore</label></p> 
+        </fieldset>
+
+        <div class="total-container">
+            Total: Rp <span id="total">0</span>
+        </div>
+        
+        <button type="submit">Submit</button>
+        <p id="message"></p>
+    </form>
+
+    <script src="../Js/script.js" defer></script>
+</body>
+</html>

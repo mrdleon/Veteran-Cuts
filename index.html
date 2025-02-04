@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veteran cuts</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="mybg">
+
+<!-- Navbar Start-->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Veteran<span>Cuts</span>.</a>
+
+        <div class="navbar-nav">
+            <a href="#home">Home</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#style">Style</a>
+            <a href="#service">Services</a>
+            <a href="#contact">Kontak</a>
+        </div>
+
+        <div class="navbar-extra">
+            <a href="./component/reservasi.html" class="scissors-button" onclick="handleLinkClick(event, './component/reservasi.html')">
+                <i data-feather="scissors"></i>
+            </a>
+            <a href="./component/login.html" class="login" onclick="handleLinkClick(event, './component/login.html')">Login</a>
+            <a href="#" id="hamburger-menu">
+                <i data-feather="menu"></i>
+            </a>
+        </div>
+    </nav>
+<!-- Navbar End-->
+
+
+<!-- Hero Section start-->
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>
+                Mau kece Kayak Pahlawan? Pangkasnya di<span> Veteran</span>
+            </h1>
+            <p>
+                Potongan Sempurna, Penampilan Juara.
+            </p>
+            <h3>Pangkas Sekarang!</h3>
+                
+            
+        </main>
+    </section>
+<!-- Hero Section End-->
+
+
+
+<!-- About Section Start -->
+    <section id="about" class="about">
+        <h2>Tentang <span>Kami</span></h2>
+    
+        <div class="row">
+            <div class="about-img slider">
+                <div class="slides">
+                    <img src="./image1/veteran-group/adhafa.PNG" alt="Tentang Kami 1" class="slide">
+                    <img src="./image1/veteran-group/aulia.PNG" alt="Tentang Kami 2" class="slide">
+                    <img src="./image1/veteran-group/dimas.PNG" alt="Tentang Kami 3" class="slide">
+                    <img src="./image1/veteran-group/farel.PNG" alt="Tentang Kami 4" class="slide">
+                    <img src="./image1/veteran-group/oktavian.PNG" alt="Tentang Kami 4" class="slide">
+                    <img src="./image1/veteran-group/veteran_sigma.PNG" alt="Tentang Kami 4" class="slide">
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+    
+            <div class="content">
+                <h3>Kenapa Memilih Veteran Cuts?</h3>
+                <p>Veteran Cuts adalah pilihan terbaik karena kami menghadirkan layanan potong rambut berkualitas tinggi yang dikombinasikan dengan pengalaman nyaman dan profesional. Dengan barber berpengalaman, alat modern, dan perhatian pada detail, kami memastikan setiap pelanggan keluar dengan potongan yang sesuai gaya dan kepercayaan diri yang meningkat.</p>
+                <p>Di Veteran Cuts, kami tidak hanya memberikan potongan rambut,kami memberikan gaya hidup.</p>
+            </div>
+        </div>
+        <link rel="stylesheet" href="css/about.css">
+        <script src="Js/about.js"></script>
+    </section>
+<!-- About Section End -->
+
+<!-- Style Section Start -->
+    <section id="style" class="style">
+        <h2>Style <span>Kami</span></h2>
+        <p>Kami menawarkan berbagai gaya potongan rambut, mulai dari klasik hingga modern. Barber kami selalu up-to-date dengan tren terbaru dan siap memberikan rekomendasi gaya terbaik yang cocok untuk anda.</p>
+        <p> . . . </p>
+        <p>Punya gaya potongan sendiri yang ingin Anda coba? Kami dengan senang hati menerima permintaan khusus untuk mewujudkan tampilan rambut impian Anda. Di sini, gaya Anda adalah prioritas kami!</p>
+
+        <div class="row">
+            <div class="style-card">
+                <img src="./image1/hair-style/225x225/style/buzzcut.PNG" alt="buzzcut" class="style-card-img">
+                <h3 class="style-card-title">- Buzz Cut -</h3>
+                <p class="style-card-price">IDR 25k</p>
+            </div>
+            <div class="style-card">
+                <img src="./image1/hair-style/225x225/style/undercut.PNG" alt="undercut" class="style-card-img">
+                <h3 class="style-card-title">- Under Cut -</h3>
+                <p class="style-card-price">IDR 25k</p>
+            </div>
+            <div class="style-card">
+                <img src="./image1/hair-style/225x225/style/comma hair.PNG" alt="comma-hair" class="style-card-img">
+                <h3 class="style-card-title">- Comma Hair -</h3>
+                <p class="style-card-price">IDR 25k</p>
+            </div>
+            <div class="style-card">
+                <img src="./image1/hair-style/225x225/style/french crop.PNG" alt="french-crop" class="style-card-img">
+                <h3 class="style-card-title">- French Crop -</h3>
+                <p class="style-card-price">IDR 25k</p>
+                <img src="./image1/" alt="">
+            </div>
+            <div class="style-card">
+                <img src="./image1/hair-style/225x225/style/mullet.PNG" alt="mullet" class="style-card-img">
+                <h3 class="style-card-title">- Mullet -</h3>
+                <p class="style-card-price">IDR 25k</p>
+            </div>
+            <div class="style-card">
+                <img src="./image1/hair-style/225x225/style/two blocks.PNG" alt="two-blocks" class="style-card-img">
+                <h3 class="style-card-title">- Two Blocks -</h3>
+                <p class="style-card-price">IDR 25k</p>
+            </div>
+            <div class="style-card">
+                <img src="./image1/hair-style/225x225/style/pompadour.PNG" alt="pompadour" class="style-card-img">
+                <h3 class="style-card-title">- Pompadour -</h3>
+                <p class="style-card-price">IDR 25k</p>
+            </div>
+            <div class="style-card">
+                <img src="./image1/hair-style/225x225/style/slicked back.PNG" alt="slicked-back" class="style-card-img">
+                <h3 class="style-card-title">- Slicked Back -</h3>
+                <p class="style-card-price">IDR 25k</p>
+            </div>
+        </div>
+    </section>
+<!-- Style Section End -->
+
+
+<!-- Service start -->
+    <section class="service" id="service">
+        <h2>Layanan <span>Kami</span></h2>
+        <p>Berikut adalah paket dan harga yang kami sediakan</p>
+
+        <div class="row">
+            <div class="service-card">
+                <div class="service-icons">
+                    <a href="./component/reservasi.html"><i data-feather="scissors"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="service-image">
+                    <img src="./image1/hair-style/225x225/basic dye.PNG" alt="Simple-Grooming">
+                </div>
+                <div class="service-content">
+                    <h3>Simple Grooming</h3>
+                    <h4>Potong rambut, keramas, dan hair tonic.</h4>
+                    <div class="service-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-half"></i>
+                    </div>
+                    <div class="service-price">IDR 25k <span>IDR 30k</span></div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icons">
+                    <a href="./component/reservasi.html"><i data-feather="scissors"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="service-image">
+                    <img src="./image1/hair-style/225x225/kids grooming.PNG" alt="Kids-Haircut">
+                </div>
+                <div class="service-content">
+                    <h3>Kids Haircut</h3>
+                    <h4>Potong rambut, keramas, dan hair tonic. Juga bisa menyediakan request hair tatoo.</h4>
+                    <div class="service-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                    </div>
+                    <div class="service-price">IDR 20k <span>IDR 25k</span></div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icons">
+                    <a href="./component/reservasi.html"><i data-feather="scissors"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="service-image">
+                    <img src="./image1/hair-style/225x225/intermediete grooming.PNG" alt="intermediete-grooming">
+                </div>
+                <div class="service-content">
+                    <h3>Intermediete Grooming</h3>
+                    <h4>Potong rambut, keramas, pijat (kepala, leher, bahu), hair tonic, dan pomade untuk styling.</h4>
+                    <div class="service-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                    </div>
+                    <div class="service-price">IDR 35k <span>IDR 40k</span></div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icons">
+                    <a href="./component/reservasi.html"><i data-feather="scissors"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="service-image">
+                    <img src="./image1/hair-style/225x225/hair spa.PNG" alt="grooming-and-hairspa">
+                </div>
+                <div class="service-content">
+                    <h3>Grooming & Hairspa</h3>
+                    <h4>potong rambut, keramas, pengaplikasian masker rambut agar rambut sehat & ternutrisi, pijat (kepala, leher, dan punggung) lalu diakhiri dengan pengaplikasian tonik serta pomade.</h4>
+                    <div class="service-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                    </div>
+                    <div class="service-price">IDR 45k <span>IDR 50k</span></div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icons">
+                    <a href="./component/reservasi.html"><i data-feather="scissors"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="service-image">
+                    <img src="./image1/hair-style/225x225/basic dye.PNG" alt="basic-dye">
+                </div>
+                <div class="service-content">
+                    <h3>Grooming and Basic Hair Coloring</h3>
+                    <h4>Potong rambut + keramas, pewarnaan rambut (tanpa dibleaching) sesuai dengan warna yang diinginkan.</h4>
+                    <div class="service-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-half"></i>
+                    </div>
+                    <div class="service-price">IDR 60k <span>IDR 65k</span></div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icons">
+                    <a href="./component/reservasi.html"><i data-feather="scissors"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="service-image">
+                    <img src="./image1/hair-style/225x225/fashion dye.PNG" alt="fashioned-dye">
+                </div>
+                <div class="service-content">
+                    <h3>Grooming and Fashion Hair Coloring</h3>
+                    <h4>Potong rambut + keramas, pewarnaan rambut dengan bleaching sesuai dengan warna yang diinginkan.</h4>
+                    <div class="service-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                    </div>
+                    <div class="service-price">IDR 75k <span>IDR 80k</span></div>
+                </div>
+        </div>
+    </section>
+<!-- Service End -->
+
+
+<!-- Contact Section Start -->
+    <section id="contact" class="contact">
+
+        <h2>Kontak <span>Kami</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, perferendis.
+        </p>
+
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.6219554958845!2d110.41454914002301!3d-7.782206990377599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599155555555%3A0x536eb168b1dca148!2sUniversitas%20Pembangunan%20Nasional%20%22Veteran%22%20Yogyakarta%20-%20Kampus%202%20Babarsari!5e0!3m2!1sid!2sid!4v1730735510736!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+        </div>
+
+    </section>
+<!-- Contact Section End -->
+
+<!-- Footer Start -->
+    <footer>
+        <div class="socials">
+            <a href="https://www.instagram.com/ifh_2024/profilecard/?igsh=MTR1bWhoY2xkNHlmNg=="><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
+            <a href="#"><i data-feather="facebook"></i></a>
+            <a href="#"><i data-feather="phone"></i></a>
+        </div>    
+
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#style">Style</a>
+            <a href="#contact">Kontak</a>
+        </div>
+
+        <div class="credit">
+            <p>Created By <a href="">Kelompok 2</a>. | &copy; 2024.</p>
+        </div>
+    </footer>
+<!-- Footer end -->
+
+<!-- Modal Box Item Detail start -->
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="./image1/hair-cutting.webp" alt="layanan 1">
+                <div class="layanan-content">
+                    <h3>layanan 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam magnam et quidem sit, reiciendis numquam iste ipsum officiis explicabo vero optio magni repellendus laboriosam non!</p>
+                    <div class="service-content">
+                        <h3>Hair-Cutting & Fitting</h3>
+                        <div class="service-stars">
+                            <i data-feather="star"></i>
+                            <i data-feather="star"></i>
+                            <i data-feather="star"></i>
+                            <i data-feather="star"></i>
+                            <i data-feather="star"></i>
+                        </div>
+                        <div class="service-price">IDR 25k <span>IDR 30k</span></div>
+                        <a href="component/reservasi.html"><i data-feather="scissors"></i><span>add to cuts</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal Box Item Detail End -->
+
+<!-- Notification Modal -->
+    <div id="notification" style="display: none;">
+        <p>Data berhasil dikirim!</p>
+    </div>
+
+<!-- Feather Icons -->    
+<script>
+    feather.replace();
+</script>
+
+<!-- My Javascript -->   
+    <script src="./js/script.js"></script>
+</body>
+
+
+</html>

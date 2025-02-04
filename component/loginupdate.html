@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Password</title>
+    <link rel="stylesheet" href="../css/loginupdate.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Ubah Password</h2>
+        <form action="#" method="put" class="changePasswordForm" onsubmit="changePassword(event)">
+            <label for="currentPassword">Email</label>
+            <input type="email" id="email" placeholder="Masukkan Email" required>
+
+            <label for="currentPassword">Password Lama</label>
+            <input type="password" id="currentPassword" placeholder="Masukkan password lama" required>
+
+            <label for="newPassword">Password Baru</label>
+            <input type="password" id="newPassword" placeholder="Masukkan password baru" required>
+
+            <label for="confirmPassword">Konfirmasi Password Baru</label>
+            <input type="password" id="confirmPassword" placeholder="Konfirmasi password baru" required>
+
+            <button type="submit" >Ubah Password</button>
+            <p id="message"></p>
+        </form>
+    </div>
+    <script src="../Js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pangkas Rambut</title>
+    <link rel="stylesheet" href="../css/login.css">
+    
+</head>
+<body class="mybg">
+    <div class="container">
+        <h2>Login</h2>
+        <form action="#" method="post" class="login-form" onsubmit="loginUser(event)">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" name="email" required placeholder="Email Anda">
+
+            <label for="login-password">Kata Sandi</label>
+            <input type="password" id="login-password" name="password" required placeholder="Kata Sandi Anda">
+
+            <button type="submit">Login</button>
+            <p class="register-link">Belum punya akun? 
+                <a class="register-link1" href="Registrasi.html" onclick="handleLinkClick(event, 'Registrasi.html')">Daftar di sini</a>
+            </p>
+            <p class="update-password">Lupa Password? 
+                <a class="update-password1" href="loginupdate.html" onclick="handleLinkClick(event, 'loginupdate.html')">Update Password</a>
+            </p>
+            
+            <!-- Tambahkan elemen untuk menampilkan pesan status login -->
+            <p id="message"></p>
+        </form>
+    </div>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>
